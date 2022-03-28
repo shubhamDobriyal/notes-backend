@@ -1,0 +1,42 @@
+POST http://localhost/project-api/sign-up.php
+Content-Type: application/json
+
+{
+    "name": "Vikas Kukreti",
+    "email": "vikas@gmail.com' OR name='Vikas'",
+    "password": "123",
+    "c_password": "123"
+}
+### second registration request
+POST http://localhost/project-api/sign-up.php
+Content-Type: application/json
+
+{
+    "name": "Shubham Dobriyal",
+    "email": "shubham1@gmail.com",
+    "password": "123",
+    "c_password": "125"
+}
+### login request
+POST http://localhost/project-api/login.php
+Content-Type: application/json
+
+{
+    "email": "vikas@gmail.com",
+    "password": "123"
+}
+### get notes of the user
+GET  http://localhost/project-api/get-notes.php?id=1
+
+### get notes of the user
+GET  http://localhost/project-api/get-notes.php?id=1
+
+### add notes
+POST  http://localhost/project-api/add-notes.php
+Content-Type: application/json
+
+{
+    "id": "2",
+    "title": "ex wife",
+    "content": "addfuysf"
+}
